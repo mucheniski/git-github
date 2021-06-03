@@ -12,4 +12,6 @@ o Git é um VCS distribuido, ou seja, permite que você faça o versionamento lo
 
 ![](/images/exemplo-git-github.png)  
 
-Editado direto pelo github
+Editado direto pelo github  
+Digitando ! + Enter no arquivo HTML já é criada uma estrutura base de HTML.
+Digitando lorem + Enter já é disponibilizado o texto.

@@ -13,5 +13,8 @@ o Git é um VCS distribuido, ou seja, permite que você faça o versionamento lo
 ![](/images/exemplo-git-github.png)  
 
 Editado direto pelo github  
-Digitando ! + Enter no arquivo HTML já é criada uma estrutura base de HTML.
-Digitando lorem + Enter já é disponibilizado o texto.
+! + Enter no arquivo HTML já é criada uma estrutura base de HTML.  
+lorem + Enter já é disponibilizado o texto.  
+Ctrl + Enter faz o commit no github desktop.  
+Ctrl + P faz o push  
+Ctrl + Shift + P faz o pull  

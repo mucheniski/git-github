@@ -12,4 +12,4 @@ o Git é um VCS distribuido, ou seja, permite que você faça o versionamento lo
 
 ![](/images/exemplo-git-github.png)  
 
-Aula com o repositorio criado pelo github desktop
+Editado direto pelo github

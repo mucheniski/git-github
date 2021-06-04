@@ -3,6 +3,10 @@
 [Curso git github curso em vídeo](https://www.cursoemvideo.com/course/curso-de-git-e-github/)  
 [Repositorio do curso no github](https://github.com/gustavoguanabara/git-github)
 
+[github-como-fazer-um-readme-md-bonitão](https://medium.com/@raullesteves/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)
+
+[formatação de readme - Markdown](https://github.com/luong-komorebi/Markdown-Tutorial/blob/master/README_pt-BR.md)
+
 Git - Software de controle de versão  
 Github - Plataforma de rede social para programadores  
 
@@ -19,109 +23,114 @@ Ctrl + Enter faz o commit no github desktop.
 Ctrl + P faz o push  
 Ctrl + Shift + P faz o pull  
 
+CRIAR TABELA  
+Numero | Nome | Nota  
+---|---|---  
+1|Diego|10
+2|Bruna|10
+  
+    
+	 
+
 
 COMANDOS GIT    
-Create | Clone  
-	Create new repository   
-		git init  
-	Clone local repository  
-		git clone /path/to/repository  
-	Clone remote repository  
-		git clone urlRepository  
-	Set repository or change repository  
-		git remote set-url origin urlRepository  
-	Show remote repository  
-	git remote  
-	git remote -v  
-Link local repository to remote repository  
-	git remote add origin urlRepository  
-Show informations about remote repository  
-	git remote show origin  
-Unlink remote repository  
-	git remote rm urlRepository  
+**Create | Clone**  
+   Create new repository   
+	   git init  
+   Clone local repository  
+	   git clone /path/to/repository  
+   Clone remote repository  
+	   git clone urlRepository  
+   Set repository or change repository  
+	   git remote set-url origin urlRepository  
+   Show remote repository  
+      git remote  
+      git remote -v  
+   Link local repository to remote repository  
+      git remote add origin urlRepository  
+   Show informations about remote repository  
+      git remote show origin  
+   Unlink remote repository  
+      git remote rm urlRepository  
 
 
 
-Credentials | Security  
-	Remove credentials  
-		git config --system --unset credential.helper  
-Set credentials  
-git config --global user.name userName  
-git config --global user.email userEmail  
-git config --global user.password userPassword  
-Save credentials to not ask again before each commit  
-git config credential.${remote}.username userName  
-git config credential.${remote}.password userPassword  
-git config credential.helper store   
+**Credentials | Security**  
+   Remove credentials  
+      git config --system --unset credential.helper  
+   Set credentials  
+      git config --global user.name userName  
+      git config --global user.email userEmail  
+      git config --global user.password userPassword  
+   Save credentials to not ask again before each commit  
+      git config credential.${remote}.username userName  
+      git config credential.${remote}.password userPassword  
+      git config credential.helper store   
  
 
 Add | Remove changes  
-	Add changes to index  
-		git add fileName  
-	Add all changes to index  
-		git add --all  
-	Remove changes locally  
-		git rm fileName  
-	Remove changes  
-		git checkout fileName  
-	Remove directory  
-		git rm -r pathOrName  
+   Add changes to index  
+      git add fileName  
+   Add all changes to index  
+      git add --all  
+   Remove changes locally  
+      git rm fileName  
+   Remove changes  
+      git checkout fileName  
+   Remove directory  
+      git rm -r pathOrName  
 
 
 Commit | synchronize  
-	Show status  
-		git status  
-	Commit changes  
-		git commit -m “commit message”  
-	Push changes to remote repository  
-		git push origin branchName  
-	Connect local repository to remote repository  
-		git remote add origin urlRepository  
-	Update local repository with remote changes  
-		git pull  
-	Change commit message without change files on local repository  
-		git reset --soft HEAD~1  
-		git push -f origin HEAD^:branchName // Remove the commit from branch  
-		git commit -m “New Commit message”  
-		git push origin master  
-	Eliminate the last 3 commits keeping files changes  
-		git reset --soft HEAD~3  
-	Eliminate the last 3 commits keeping files changes with interactive mode  
-		git rebase -i HEAD~3		  
-	Remove files to stage (git add fileName) and send beck to untracked files  
-		git reset HEAD fileName  
-	Verify code in older versions  
-		git checkout commitCode  
-		git checkout branchName // go back to actual code eg. git checkout master  
-	Delete commit with all changes  
-		git reset --hard  
-	Follback Return commit   
-git reset --hard {hash-do-commit-desejado}  
-	Show difference of changes before commit  
-		git diff fileName  
-		git diff --name only // Shows only file Names  
-	Change last commit message  
-git commit -m “New commit message” --amend	  
-
-
-
-
+   Show status  
+      git status  
+   Commit changes  
+      git commit -m “commit message”  
+   Push changes to remote repository  
+      git push origin branchName  
+   Connect local repository to remote repository  
+      git remote add origin urlRepository  
+   Update local repository with remote changes  
+      git pull  
+   Change commit message without change files on local repository  
+      git reset --soft HEAD~1  
+      git push -f origin HEAD^:branchName // Remove the commit from branch  
+      git commit -m “New Commit message”  
+      git push origin master  
+   Eliminate the last 3 commits keeping files changes  
+      git reset --soft HEAD~3  
+   Eliminate the last 3 commits keeping files changes with interactive mode  
+      git rebase -i HEAD~3		  
+   Remove files to stage (git add fileName) and send beck to untracked files  
+      git reset HEAD fileName  
+   Verify code in older versions  
+      git checkout commitCode  
+      git checkout branchName // go back to actual code eg. git checkout master  
+   Delete commit with all changes  
+      git reset --hard  
+   Follback Return commit   
+      git reset --hard {hash-do-commit-desejado}  
+   Show difference of changes before commit  
+      git diff fileName  
+      git diff --name only // Shows only file Names  
+   Change last commit message  
+      git commit -m “New commit message” --amend	  
 
 Log  
-	See commit log  
-		git log --pretty=oneline  
-	Show history with two last changes  
-		git log -p -2  
-	Show history log from specific file  
-		git log fileNameOrPath  
-	Show history of file modifications  
-		git log --diff-filter=M --finleNameOrPath // A-added | C-coppied | D-deleted | M-modified | R-renamed  
-	Show history from author  
-		git log --author=username  
-		git log --author=username --pretty=oneline  
-	Search commit log by commit message  
-		git log --grep=”123456” --pretty=oneline  
-		git log --grep=”WordOfCommit” --pretty=oneline  
+   See commit log  
+      git log --pretty=oneline  
+   Show history with two last changes  
+      git log -p -2  
+   Show history log from specific file  
+      git log fileNameOrPath  
+   Show history of file modifications  
+      git log --diff-filter=M --finleNameOrPath // A-added | C-coppied | D-deleted | M-modified | R-renamed  
+   Show history from author  
+      git log --author=username  
+      git log --author=username --pretty=oneline  
+   Search commit log by commit message  
+      git log --grep=”123456” --pretty=oneline  
+      git log --grep=”WordOfCommit” --pretty=oneline  
 		
 
 Branches  

@@ -200,3 +200,8 @@ Tips | Help
 		https://ohshitgit.com/   
 	Fabio Akita  
 		https://www.youtube.com/watch?v=6OokP-NE49k&feature=youtu.be&t=101  
+
+   Github Pages  
+   Ir na sessão pages > selecionar a branch master > save  
+   Após isso é habilitado uma pagina do seu github ex: https://mucheniski.github.io/git-github/site-exemplo/index.html  
+   

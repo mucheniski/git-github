@@ -36,6 +36,7 @@ Numero | Nome | Nota
 COMANDOS GIT    
 **Create | Clone**  
    Create new repository   
+   
 	   git init  
    Clone local repository  
 	   git clone /path/to/repository  
@@ -162,9 +163,9 @@ Configurations
 or		  
 git config --global mergetool.meld.path 'C:\Program Files (x86)\Meld\meld\meld.exe'  
 
-	Or set on config file  
-	https://faun.pub/using-vscode-as-git-mergetool-and-difftool-2e241123abe7   
-		# Add this to you gitconfig  
+Or set on config file  
+https://faun.pub/using-vscode-as-git-mergetool-and-difftool-2e241123abe7   
+	# Add this to you gitconfig  
 # Comment: Start of "Extra Block"  
 # Comment: This is to unlock VSCode as your git diff and git merge tool  
 [merge]  
